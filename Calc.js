@@ -1,4 +1,5 @@
 
+
 function getValue(e)
 {
 	//alert("hi");
@@ -36,6 +37,47 @@ function solve()
 {
 	temp = document.getElementById('calc').value;
 	document.getElementById('calc').value = eval(temp);
-	document.getElementById('subInput').value = temp +"=";
-	document.getElementsByClassName('modal-body').innerText = temp +"=";
+	
+	let arr =[];
+	arr.push(document.getElementById('subInput').value = temp);
+	addHistory();
+}
+function square()
+{
+
+document.getElementById('calc').value = document.getElementById('calc').value**2;
+
+}
+function oneByx()
+{
+	document.getElementById('calc').value = 1/ document.getElementById('calc').value;
+}
+function sqrt()
+{
+	document.getElementById('calc').value = Math.sqrt(document.getElementById('calc').value);
+}
+// function showHistory()
+// {
+// 	let history = '<div class="his">';
+// 	history+= "<p>98-6 =</p><p>92</p>";
+// 	history+= '</div>';
+// 	document.getElementsById('history').innerHTML = history;
+// }
+
+function showHistory() {
+ 	
+  }
+//let historyButton = document.getElementById("historyButton");
+// historyButton.addEventListener("click", showHistory);
+
+function addHistory()
+{
+	let history = [];
+	history.push(document.getElementById('history').innerHTML += document.getElementById('subInput').value);
+
+	// let historySection = document.getElementById("history");
+ 	// historySection.innerHTML = "";
+ 	// for (let i = 0; i < history.length; i++) {
+ 	//   historySection.innerHTML += history[i] + "<br>";
+ 	// }
 }
