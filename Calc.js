@@ -78,6 +78,5 @@ function addHistory()
 	// let historySection = document.getElementById("history");
  	// historySection.innerHTML = "";
  	// for (let i = 0; i < history.length; i++) {
- 	//   historySection.innerHTML += history[i] + "<br>";
- 	// }
+ 	//   historySection.innerHTML += history[i] + "<br>";}
 }
